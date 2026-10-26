@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light" />
+    <script src="./theme-bootstrap.js"></script>
+    <meta
+      name="description"
+      content="Enshield — shipping protection and claims management for Shopify and WooCommerce merchants."
+    />
+    <!--
+      Inter is self-hosted from /fonts (BUG FB). It used to be fetched from
+      fonts.googleapis.com, which coupled first paint to a third-party CDN,
+      broke air-gapped/self-hosted installs, and disclosed every visitor's IP
+      to Google. `font-display: swap` in inter.css still renders text
+      immediately in the system fallback declared in --font-sans.
+
+      The latin subset is preloaded because it is on the critical path for
+      essentially every dashboard view; the other six subsets stay lazy behind
+      their unicode-range. Do not add external font origins here —
+      scripts/check-no-external-origins.mjs fails the build if you do.
+    -->
+    <link
+      rel="preload"
+      href="./fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="./fonts/inter.css" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./brand/enshield-mark-32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./brand/enshield-mark-16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./brand/enshield-mark-180.png" />
+    <link rel="manifest" href="./site.webmanifest" />
+    <meta name="theme-color" content="#6847f7" />
+    <title>Enshield V24 Demo</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <script type="module" crossorigin src="./assets/index-r6jNHe_1.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-B0Z9INg1.js">
+    <link rel="modulepreload" crossorigin href="./assets/react-zLlWjcVb.js">
+    <link rel="modulepreload" crossorigin href="./assets/motion-CDwiXh8j.js">
+    <link rel="modulepreload" crossorigin href="./assets/charts-C1BbL5cp.js">
+    <link rel="stylesheet" crossorigin href="./assets/index-BnY7D3pw.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
